@@ -12,13 +12,13 @@ copy `.travis.yml` file to your project.
 
 Step 2:
 
-Enable your project in TravisCI.
+Enable your project in Travis CI.
 
 ![screenshot](img/Screen_Shot1.png)
 
 Step 3:
 
-add Environment Variables ARTIFACTORY_URL, ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD in build settings of CircleCI.
+add Environment Variables ARTIFACTORY_URL, ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD in build settings of Travis CI.
 
 ![screenshot](img/Screen_Shot2.png)
 
