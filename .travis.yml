@@ -6,7 +6,7 @@ script:
   chmod +x jfrog
   mvn clean install
   ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD
-  ./jfrog rt u "multi*/*.jar" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$CIRCLE_BUILD_NUM --flat=false
-  ./jfrog rt u "multi*/*.war" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$CIRCLE_BUILD_NUM --flat=false
-  ./jfrog rt bce travisci-generic-artifactory $CIRCLE_BUILD_NUM
-  ./jfrog rt bp travisci-generic-artifactory $CIRCLE_BUILD_NUM
+  ./jfrog rt u "multi*/*.jar" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$TRAVIS_BUILD_NUMBER --flat=false
+  ./jfrog rt u "multi*/*.war" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$TRAVIS_BUILD_NUMBER --flat=false
+  ./jfrog rt bce travisci-generic-artifactory $TRAVIS_BUILD_NUMBER
+  ./jfrog rt bp travisci-generic-artifactory $TRAVIS_BUILD_NUMBER
