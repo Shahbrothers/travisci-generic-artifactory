@@ -1,20 +1,18 @@
-#Artifactory Integration with Circle CI using Artifactory CLI
+#Artifactory Integration with Travis CI using Artifactory CLI
 
-## Build Status
-
-[![CircleCI](https://circleci.com/gh/jainishshah17/circleci-generic-artifactory.svg?style=svg)](https://circleci.com/gh/jainishshah17/circleci-generic-artifactory)
+[![Build Status](https://travis-ci.org/Shahbrothers/travisci-generic-artifactory.svg?branch=master)](https://travis-ci.org/Shahbrothers/travisci-generic-artifactory)
 
 `To make this integration work you will need to have running Artifactory-pro/Artifactory SAAS/Artifactory Enterprise which is acccessible form outside.`
 
-##Steps to Integrate Circle CI with Artifactory.
+##Steps to Integrate Travis CI with Artifactory.
 
 Step 1:
 
-copy `circle.yml` file to your project.
+copy `.travis.yml` file to your project.
 
 Step 2:
 
-Enable your project in CircleCI.
+Enable your project in TravisCI.
 
 ![screenshot](img/Screen_Shot1.png)
 
